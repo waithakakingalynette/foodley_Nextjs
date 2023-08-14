@@ -19,7 +19,7 @@ const Categories = () => {
         <div className="flex flex-col items-center">
           <div className="">
             <div className="burger">
-              <img src="/media/burger-clip.png" alt="Burger" />
+              <img src="/media/burger.png" alt="Burger" />
             </div>
           </div>
           <div className="mt-20">
@@ -32,7 +32,7 @@ const Categories = () => {
         <div className="flex flex-col items-center">
           <div className="">
             <div className="pizza">
-              <img src="/media/mushroom-pizza.png" alt="Pizza" />
+              <img src="/media/pizza.png" alt="Pizza" />
             </div>
           </div>
           <div className="mt-20">
@@ -45,7 +45,7 @@ const Categories = () => {
         <div className="flex flex-col items-center">
           <div className="">
             <div className="fries">
-              <img src="/media/fries-clipart.png" alt="Fries" />
+              <img src="/media/frenchfries.png" alt="Fries" />
             </div>
           </div>
           <div className="mt-20">
@@ -56,6 +56,7 @@ const Categories = () => {
           </div>
         </div>
       </div>
+
     </div>
   );
 };

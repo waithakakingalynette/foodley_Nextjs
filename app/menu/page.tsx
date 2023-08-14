@@ -57,6 +57,8 @@ const Menu = () => {
           />
         </div>
       </div>
+      <img src="/media/buy.png"/>
+
     </div>
   );
 };
