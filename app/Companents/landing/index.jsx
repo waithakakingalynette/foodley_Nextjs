@@ -10,7 +10,7 @@ const Landing = () => {
           <div>
             <h4 className="text-4xl mb-4">All Fast Food is <br /> Available at Foodish</h4>
             <div className="thumbnail flex items-center gap-4 text-gray-600">
-              <img src="/media/nyeliep.jpg" alt="Delicious Food" className="w-12 h-12 rounded-full object-cover" />
+              <img src="/media/Lynette.jpg" alt="Delicious Food" className="w-12 h-12 rounded-full object-cover" />
               <p className="mt-2">We Are Just A Click Away When You <br /> Crave For Delicious Fast Food</p>
             </div>
 
@@ -31,23 +31,24 @@ const Landing = () => {
         </div>
       </div>
       <div style={{ display:"flex",fontFamily: "'Ubuntu', sans-serif", marginTop: "10%", margin: "0 15%", padding: "20px", justifyContent: "space-around", alignItems: "center", backgroundColor: "#FFFFF0", borderRadius: "30px", boxShadow: "0 0 10px rgba(0, 0, 0, 0.4)" }}>
-  <div className="text-center">
-    <FontAwesomeIcon className="text-yellow-500 w-12 h-12 mb-2 ml-40 icons"icon={faShippingFast} />
-    <h5 className="text-lg font-semibold">Fast Delivery</h5>
-    <p className="text-gray-600">The food will be Delivered To Your Home Within 1-2 Hours Of Your Ordering</p>
-  </div>
-  <div className="text-center">
-      <FontAwesomeIcon className="text-yellow-500 w-12 h-12 mb-2 ml-48 icons" icon={faLeaf} />
-      <h5 className="text-lg font-semibold">Fresh Food</h5>
+      <div className="text-center">
+      <FontAwesomeIcon className="text-yellow-500 w-12 h-12 mb-2 ml-40 icons"  /> 
+      <h5 className="text-lg font-semibold" style={{color:"black",fontSize:"30px"}}>Fast Delivery</h5> <br />
+      <p className="text-gray-600">The food will be Delivered To  <br />Your Home Within 1-2 Hours Of <br /> Your Ordering</p>
+    </div>
+    <div className="text-center">
+      <FontAwesomeIcon className="text-yellow-500 w-12 h-12 mb-2 ml-48 icons"  />
+      <h5 className="text-lg font-semibold" style={{color:"black",fontSize:"30px"}}>Fresh Food</h5> <br />
       <p className="text-gray-600">
-        Your Food Will Be delivered 100% Fresh To Your Home. We Do Not Deliver Stale Food
+        Your Food Will Be delivered  <br />100% Fresh To Your Home. We  <br />Do Not Deliver Stale Food
       </p>
     </div>
-  <div className="text-center">
-    <FontAwesomeIcon className="text-yellow-500 w-12 h-12 mb-2 ml-44 icons"icon={faTruck} />
-    <h5 className="text-lg font-semibold">Free Delivery</h5>
-    <p className="text-gray-600 ">Your Food Delivery Is Absolutely Free. No Cost, Just Order And Enjoy</p>
-  </div>
+    <div className="text-center">
+      <FontAwesomeIcon className="text-yellow-500 w-12 h-12 mb-2 ml-44 icons"  />
+      <h5 className="text-lg font-semibold" style={{color:"black",fontSize:"30px"}}>Free Delivery</h5> <br />
+      <p className="text-gray-600 ">Your Food Delivery Is <br /> Absolutely Free. No Cost <br /> Just Order And Enjoy</p>
+    </div>
+  
 </div>
 
 

@@ -3,13 +3,7 @@ import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar, faStarHalfAlt } from "@fortawesome/free-solid-svg-icons";
 
-interface MenuItemProps {
-  imageUrl: string;
-  name: string;
-  ratings: number;
-  price: number;
-}
-const MenuItem: React.FC<MenuItemProps> = ({ imageUrl, name, ratings, price }) => {
+const MenuItem = ({ imageUrl, name, ratings, price }) => {
   const renderStars = () => {
     const fullStars = Math.floor(ratings);
     const hasHalfStar = ratings % 1 >= 0.5;
@@ -28,17 +22,21 @@ const MenuItem: React.FC<MenuItemProps> = ({ imageUrl, name, ratings, price }) =
   };
 
   return (
-    <div className="bg-white shadow-md rounded-md  menu-item w-1/2">
+    <div className="bg-white shadow-md rounded-md menu-item w-1/2">
       <div className="relative">
         <div>
-          <img src={imageUrl} alt={name} className="object-cover   w-44 h-44 round-full  border-pink-500 border-10 border-pink-500 rounded-full ml-32 mt-1 circle-background " />
+          <img
+            src={imageUrl}
+            alt={name}
+            className="object-cover w-44 h-44 border-pink-500 border-10 rounded-full ml-32 mt-1 circle-background" style={{border: "10px solid rgb(233, 82, 107)", borderradius: "50%"}}
+          />
         </div>
       </div>
       <div className="p-4">
-        <h6 className="font-semibold text-lg">{name}</h6>
-        <div className="flex space-x-1  w-24 h-24">{renderStars()}</div>
+        <h6 className="font-semibold text-lg" style={{color:"black"}}>{name}</h6>
+        <div className="flex space-x-1 w-24 h-24">{renderStars()}</div>
         <div className="flex items-center mt-2">
-          <p className="text-lg font-semibold">${price}</p>
+          <p className="text-lg font-semibold" style={{color:"black"}}>${price}</p>
           <button className="ml-auto bg-pink-500 px-4 py-2 rounded-full text-white buy-now">
             Buy Now
           </button>
@@ -56,3 +54,4 @@ MenuItem.propTypes = {
 };
 
 export default MenuItem;
+
