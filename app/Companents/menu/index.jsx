@@ -14,9 +14,9 @@ const Menu = () => {
           <p className=" mb-4" style={{color:"grey",fontSize:"20px",marginTop:"-3%",marginLeft:"60px"}}>
             These Are Our Regular Menus. You Can <br /> Order Anything You Like.
           </p>
-          <button className=" flex bg-pink-500 text-white py-2 px-4 rounded-full">
+          {/* <button className=" flex bg-pink-500 text-white py-2 px-4 rounded-full">
             See All
-          </button>
+          </button> */}
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4" >
           <MenuItem  
